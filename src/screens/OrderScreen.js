@@ -8,6 +8,7 @@ import Loading from "./../components/LoadingError/Loading";
 import Message from "./../components/LoadingError/Error";
 import moment from "moment";
 import axios from "axios";
+import { ORDER_PAY_RESET } from "../Redux/Constants/OrderConstants";
 import { PaystackButton } from "react-paystack";
 import { PayPalButton } from "react-paypal-button-v2";
 import { useHistory } from "react-router-dom/cjs/react-router-dom";
@@ -33,14 +34,14 @@ const OrderScreen = ({ match }) => {
   const [sdkReady, setSdkReady] = useState(false);
   const orderId = match.params.id;
   const dispatch = useDispatch();
-  const [setPaystackPublicKey] = useState("");
+  const [paystackPublicKey, setPaystackPublicKey] = useState("");
   const history = useHistory();
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
   const orderDetails = useSelector((state) => state.orderDetails);
   const { order, loading, error } = orderDetails;
   const orderPay = useSelector((state) => state.orderPay);
-  const { loading: loadingPay } = orderPay;
+  const { loading: loadingPay, success: successPay } = orderPay;
   if (!loading && order && order.orderItems) {
     const addDecimals = (num) => {
       return (Math.round(num * 100) / 100).toFixed(2);
@@ -90,6 +91,9 @@ const OrderScreen = ({ match }) => {
     }, 5000);
   };
 
+  const onClosePayment = () => {
+    toast.error("Payment was canceled.");
+  };
 
   return (
     <>
