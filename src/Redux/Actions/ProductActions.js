@@ -1,6 +1,4 @@
-const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
-  
+
 import axios from "axios";
 import {
   PRODUCT_CREATE_REVIEW_FAIL,
@@ -15,6 +13,8 @@ import {
 } from "../Constants/ProductConstants";
 import { logout } from "./userActions";
 
+const API_BASE_URL =
+  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
 // PRODUCT LIST
 export const listProduct =
   (keyword = " ", pageNumber = " ") =>

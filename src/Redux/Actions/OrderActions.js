@@ -1,6 +1,3 @@
-const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
-  
 import {
   ORDER_CREATE_FAIL,
   ORDER_CREATE_REQUEST,
@@ -18,6 +15,9 @@ import {
 import axios from "axios";
 import { CART_CLEAR_ITEMS } from "../Constants/CartConstants";
 import { logout } from "./userActions";
+
+const API_BASE_URL =
+  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
 
 // CREATE ORDER
 export const createOrder = (order) => async (dispatch, getState) => {

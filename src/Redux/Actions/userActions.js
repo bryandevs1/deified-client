@@ -1,6 +1,3 @@
-const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
-
 import {
   USER_DETAILS_FAIL,
   USER_DETAILS_REQUEST,
@@ -19,6 +16,9 @@ import {
 } from "../Constants/UserContants";
 import axios from "axios";
 import { ORDER_LIST_MY_RESET } from "../Constants/OrderConstants";
+
+const API_BASE_URL =
+  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
 
 // LOGIN
 export const login = (email, password) => async (dispatch) => {
@@ -136,7 +136,11 @@ export const updateUserProfile = (user) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.put(`${API_BASE_URL}/api/users/profile`, user, config);
+    const { data } = await axios.put(
+      `${API_BASE_URL}/api/users/profile`,
+      user,
+      config
+    );
     dispatch({ type: USER_UPDATE_PROFILE_SUCCESS, payload: data });
     dispatch({ type: USER_LOGIN_SUCCESS, payload: data });
 
