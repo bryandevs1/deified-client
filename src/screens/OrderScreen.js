@@ -57,7 +57,9 @@ const OrderScreen = ({ match }) => {
   useEffect(() => {
     const fetchPaystackPublicKey = async () => {
       try {
-        const response = await axios.get("/api/paystack/public-key");
+        const response = await axios.get(
+          "https://server.deified17.xyz/api/paystack/public-key"
+        );
         const { publicKey } = response.data;
         setPaystackPublicKey(publicKey);
         setSdkReady(true);
