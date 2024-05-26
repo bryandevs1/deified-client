@@ -13,8 +13,7 @@ import {
 } from "../Constants/ProductConstants";
 import { logout } from "./userActions";
 
-const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
+const API_BASE_URL = "https://server.deified17.xyz";
 // PRODUCT LIST
 export const listProduct =
   (keyword = " ", pageNumber = " ") =>

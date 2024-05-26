@@ -17,8 +17,7 @@ import {
 import axios from "axios";
 import { ORDER_LIST_MY_RESET } from "../Constants/OrderConstants";
 
-const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
+const API_BASE_URL = "https://server.deified17.xyz";
 
 // LOGIN
 export const login = (email, password) => async (dispatch) => {

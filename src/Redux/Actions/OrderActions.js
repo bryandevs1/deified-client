@@ -16,8 +16,8 @@ import axios from "axios";
 import { CART_CLEAR_ITEMS } from "../Constants/CartConstants";
 import { logout } from "./userActions";
 
-const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
+const API_BASE_URL = "https://server.deified17.xyz";
+
 
 // CREATE ORDER
 export const createOrder = (order) => async (dispatch, getState) => {
