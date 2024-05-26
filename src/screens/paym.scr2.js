@@ -37,7 +37,22 @@ const PaymentScreen = ({ history }) => {
           <h6>SELECT PAYMENT METHOD</h6>
           <div className="payment-container">
             <div className="radio-container garp">
-
+              <div>
+                <input
+                  className="form-check-input"
+                  type="radio"
+                  id="paypal"
+                  value="PayPal (International Debit Cards)"
+                  checked={
+                    paymentMethod === "PayPal (International Debit Cards)"
+                  }
+                  onChange={(e) => setPaymentMethod(e.target.value)}
+                />
+                <label className="form-check-label" htmlFor="paystack">
+                  PayPal (International Debit Cards)
+                </label>
+              </div>
+              <br />
               <input
                 className="form-check-input"
                 type="radio"
