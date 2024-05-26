@@ -34,9 +34,7 @@ const MainHeader = () => {
             <div className="col-12 d-flex align-items-center display-none">
               <p className="center-text">DEIFIED 1.7</p>
             </div>
-            <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-
-            </div>
+            <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center"></div>
           </div>
         </div>
       </div>
@@ -49,7 +47,10 @@ const MainHeader = () => {
               <div className="row ">
                 <div className="col-6 d-flex align-items-center">
                   <Link className="navbar-brand" to="/">
-                    <img alt="logo" src="images/DD.jpg" />
+                    <img
+                      alt="logo"
+                      src="https://res.cloudinary.com/dfwoeefqc/image/upload/v1716713606/DD_jhhtp7.jpg"
+                    />
                   </Link>
                 </div>
                 <div className="col-6 d-flex align-items-center justify-content-end Login-Register">
@@ -128,7 +129,10 @@ const MainHeader = () => {
             <div className="row">
               <div className="col-md-3 col-4 d-flex align-items-center">
                 <Link className="navbar-brand" to="/">
-                  <img alt="logo" src="images/dd.jpg" />
+                  <img
+                    alt="logo"
+                    src="https://res.cloudinary.com/dfwoeefqc/image/upload/v1716713606/DD_jhhtp7.jpg"
+                  />
                 </Link>
               </div>
 
