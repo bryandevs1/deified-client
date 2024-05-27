@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Header from "./../components/Header";
+import MainHeader from "./../components/MainHeader";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removefromcart } from "./../Redux/Actions/cartActions";
@@ -30,7 +30,7 @@ const CartScreen = ({ match, location, history }) => {
   };
   return (
     <>
-      <Header />
+      <MainHeader />
       {/* Cart */}
       <div className="container">
         {cartItems.length === 0 ? (

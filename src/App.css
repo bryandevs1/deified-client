@@ -50,6 +50,16 @@ textarea:focus {
   display: block; /* Ensure block-level display */
   padding: 0px 0; /* Add padding if needed */
 }
+@media (max-width: 768px) {
+  .center-text {
+    text-align: center;
+    display: flex;
+    font-size: 1em;
+    letter-spacing: 20px;
+    font-weight: 800;
+  }
+  
+}
 .Announcement {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.226)),
     url("https://res.cloudinary.com/dfwoeefqc/image/upload/v1715712390/WhatsApp_Image_2024-05-14_at_19.12.16_54dae5bd_zmvync.jpg")

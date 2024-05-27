@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Message from "../components/LoadingError/Error";
 import Loading from "../components/LoadingError/Loading";
 import { register } from "../Redux/Actions/userActions";
-import Header from "./../components/Header";
+import MainHeader from "./../components/MainHeader";
 
 const Register = ({ location, history }) => {
   window.scrollTo(0, 0);
@@ -31,7 +31,7 @@ const Register = ({ location, history }) => {
 
   return (
     <>
-      <Header />
+      <MainHeader />
       <div className="container d-flex flex-column justify-content-center align-items-center login-center">
         {error && <Message variant="alert-danger">{error}</Message>}
         {loading && <Loading />}

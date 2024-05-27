@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { createOrder } from "../Redux/Actions/OrderActions";
 import { ORDER_CREATE_RESET } from "../Redux/Constants/OrderConstants";
-import Header from "./../components/Header";
+import MainHeader from "./../components/MainHeader";
 import Message from "./../components/LoadingError/Error";
 
 const PlaceOrderScreen = ({ history }) => {
@@ -57,7 +57,7 @@ const PlaceOrderScreen = ({ history }) => {
 
   return (
     <>
-      <Header />
+      <MainHeader />
       <div className="container">
         <div className="row  order-detail">
           <div className="col-lg-4 col-sm-4 mb-lg-4 mb-5 mb-sm-0">

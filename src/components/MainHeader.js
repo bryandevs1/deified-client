@@ -31,7 +31,7 @@ const MainHeader = () => {
       <div className="Announcement ">
         <div className="container">
           <div className="row">
-            <div className="col-12 d-flex align-items-center display-none">
+            <div className="col-12 d-flex align-items-center">
               <p className="center-text">DEIFIED 1.7</p>
             </div>
             <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center"></div>

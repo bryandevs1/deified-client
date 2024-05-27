@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { savePaymentMethod } from "../Redux/Actions/cartActions";
-import Header from "./../components/Header";
+import MainHeader from "./../components/MainHeader";
 
 const PaymentScreen = ({ history }) => {
   window.scrollTo(0, 0);
@@ -28,7 +28,7 @@ const PaymentScreen = ({ history }) => {
 
   return (
     <>
-      <Header />
+      <MainHeader />
       <div className="container d-flex justify-content-center align-items-center login-center">
         <form
           className="Login2 col-md-8 col-lg-4 col-11"
@@ -37,7 +37,6 @@ const PaymentScreen = ({ history }) => {
           <h6>SELECT PAYMENT METHOD</h6>
           <div className="payment-container">
             <div className="radio-container garp">
-
               <input
                 className="form-check-input"
                 type="radio"

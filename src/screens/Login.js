@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Message from "../components/LoadingError/Error";
 import Loading from "../components/LoadingError/Loading";
-import Header from "./../components/Header";
+import MainHeader from "./../components/MainHeader";
 import { login } from "./../Redux/Actions/userActions";
 
 const Login = ({ location, history }) => {
@@ -30,7 +30,7 @@ const Login = ({ location, history }) => {
 
   return (
     <>
-      <Header />
+      <MainHeader />
       <div className="container d-flex flex-column justify-content-center align-items-center login-center">
         {error && <Message variant="alert-danger">{error}</Message>}
         {loading && <Loading />}

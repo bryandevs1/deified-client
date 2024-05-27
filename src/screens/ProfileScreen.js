@@ -24,7 +24,7 @@ const ProfileScreen = () => {
 
   return (
     <>
-      <Header />
+      <MainHeader />
       <div className="container mt-lg-5 mt-3">
         <div className="row align-items-start">
           <div className="col-lg-4 p-0 shadow ">

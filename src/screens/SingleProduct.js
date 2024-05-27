@@ -16,6 +16,7 @@ import {
   createProductReview,
   listProductDetails,
 } from "../Redux/Actions/ProductActions";
+import MainHeader from "../components/MainHeader";
 
 const SingleProduct = ({ history, match }) => {
   const [qty, setQty] = useState(1);
@@ -86,7 +87,7 @@ const SingleProduct = ({ history, match }) => {
   return (
     <>
       <Toast />
-      <Header />
+      <MainHeader />
       <div className="container single-product">
         {loading ? (
           <Loading />

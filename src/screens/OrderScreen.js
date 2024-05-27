@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Header from "./../components/Header";
+import MainHeader from "./../components/MainHeader";
 import { useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getOrderDetails, payOrder } from "../Redux/Actions/OrderActions";
@@ -100,7 +100,7 @@ const OrderScreen = ({ match }) => {
   return (
     <>
       <Toast />
-      <Header />
+      <MainHeader />
       <div className="container">
         {loading ? (
           <Loading />
