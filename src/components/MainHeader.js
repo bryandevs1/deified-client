@@ -34,7 +34,9 @@ const MainHeader = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 d-flex align-items-center">
+              <a href="https://www.instagram.com/dfd1.7ldn/" >
               <FontAwesomeIcon className="insta" icon={faInstagram} />
+              </a>
               <p className="center-text">DEIFIED 1.7</p>
             </div>
             <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center"></div>
