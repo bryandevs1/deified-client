@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Header from "../components/Header";
+import MainHeader from "../components/MainHeader";
 import { saveShippingAddress } from "../Redux/Actions/cartActions";
 
 const ShippingScreen = ({ history }) => {

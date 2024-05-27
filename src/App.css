@@ -58,7 +58,16 @@ textarea:focus {
     letter-spacing: 20px;
     font-weight: 800;
   }
-  
+}
+.boldd {
+  font-weight: 900;
+  color: black;
+}
+.insta {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 50px;
 }
 .Announcement {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.226)),
@@ -69,6 +78,7 @@ textarea:focus {
 
   color: #fff;
   padding: 100px 0px 100px 0px;
+  position: relative;
 }
 .Announcement .col-md-6 p {
   color: #fff;

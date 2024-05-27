@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../Redux/Actions/userActions";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const MainHeader = () => {
   const [keyword, setKeyword] = useState();
@@ -32,6 +34,7 @@ const MainHeader = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 d-flex align-items-center">
+              <FontAwesomeIcon className="insta" icon={faInstagram} />
               <p className="center-text">DEIFIED 1.7</p>
             </div>
             <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center"></div>
