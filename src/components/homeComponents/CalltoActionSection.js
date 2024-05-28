@@ -8,9 +8,8 @@ const CalltoActionSection = () => {
           <div className="col-xs-12">
             <div className="subscribe-head">
               <h2>DO you need more tips?</h2>
-              <p>
-                Sign up now to join pur waitlist and get early access</p><p> to exclusive deals and members only offers
-              </p>
+              <p>Sign up now to join our waitlist and get early access</p>
+              <p> to exclusive deals and members only offers</p>
               <form className="form-section">
                 <input placeholder="Your Email..." name="email" type="email" />
                 <input value="Yes. I want!" name="subscribe" type="submit" />
